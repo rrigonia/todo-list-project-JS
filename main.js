@@ -1,9 +1,6 @@
-let todo = [];
+const todo = [];
 
-let firstOne = prompt("Welcome, type the first Todo of your list")
-todo[0] = firstOne;
-let choice = prompt("What u want to do ?")
-console.log(todo);
+let choice = prompt("What u want to do ?");
 
 while (choice.toLowerCase() !== "quit") {
 
@@ -25,6 +22,9 @@ while (choice.toLowerCase() !== "quit") {
     }
 
     choice = prompt("OK, Done! So, What u want to do now ?")
+}
+if (choice.toLowerCase() === "quit") {
+    console.log("OK, You quit the App")
 }
 
 
